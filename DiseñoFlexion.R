@@ -1,5 +1,6 @@
 source("AsFinal.R")
 source("costoTotal1.R")
+source("costoTotal2.R")
 
 # Datos de entrada
 
@@ -25,8 +26,10 @@ if(Acero == 0) {
   print("Redimensionar sección de viga")
 } else {
   costoTotal <- costoTotal1(b, d, recub, Acero, costConcreto, costAcero)
+  costoTotalCombinado <- costoTotal2(b, d, recub, costoTotal)
 }
 
 
 Acero
 costoTotal
+costoTotalCombinado
