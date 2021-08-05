@@ -44,7 +44,6 @@ costoTotal1 <- function(b, d, recub, Acero, costConcreto, costAcero) {
     }
     
   }
-   caben
   
    # # qué varillas se descartan
     
