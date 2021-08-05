@@ -19,7 +19,7 @@ costoTotal1 <- function(b, d, recub, Acero, costConcreto, costAcero) {
   
   # Tabla de resultados
   esp <- cbind(esp, canVar, round(costoTotal, 2))
-  colnames(esp) <- c("# de varilla", "Área (cm2)", "diámetro (cm)", "cantidad de varillas", "Costo Total por ml")
+  colnames(esp) <- c("# de varilla", "Area (cm2)", "diametro (cm)", "cantidad de varillas", "Costo Total por ml")
   esp
   
   # Espacio en el lecho (entre varillas)
