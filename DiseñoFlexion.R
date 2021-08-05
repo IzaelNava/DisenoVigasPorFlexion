@@ -1,4 +1,5 @@
 source("AsFinal.R")
+source("costoTotal1.R")
 
 # Datos de entrada
 
@@ -12,6 +13,7 @@ Mu           <- 25    # ton-m
 FR           <- 0.9   # 
 costConcreto <- 1400  # m3
 costAcero    <- 18    # kg
+tamAgre      <- 1.9   # cm
 
 Ductilidad <- c("Baja", "Media", "Alta")[3]
 
@@ -19,6 +21,12 @@ Ductilidad <- c("Baja", "Media", "Alta")[3]
 
 Acero <- Asfinal(b, d, recub, fc, fy, ecu, Mu, FR, costConcreto, costAcero, Ductilidad)
 
-if(Acero == 0) print("Redimensionar sección de viga")
+if(Acero == 0) {
+  print("Redimensionar sección de viga")
+} else {
+  costoTotal <- costoTotal1(b, d, recub, Acero, costConcreto, costAcero)
+}
+
 
 Acero
+costoTotal
