@@ -35,3 +35,4 @@ costoTotal
 costoTotalCombinado
 
 # comentario
+plot(rnorm(10), rnorm(10))
