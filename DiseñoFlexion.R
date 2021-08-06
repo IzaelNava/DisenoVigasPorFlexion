@@ -35,4 +35,4 @@ costoTotal
 costoTotalCombinado
 
 # comentario
-# comentario de DANIEL ----- plot(rnorm(10), rnorm(10))
+# comentario de DANIEL ----- plot(rnorm(10), rnorm(10)) Revisar comentario
